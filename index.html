@@ -1,0 +1,3156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>테스트서버</title>
+<link rel="stylesheet" href="https://0korea.com/theme/basic/css/default_shop.css?ver=221019">
+<link rel="stylesheet" href="https://0korea.com/theme/basic/js/owl.carousel.css?ver=180820">
+<link rel="stylesheet" href="https://0korea.com/theme/basic/skin/outlogin/basic/style.css?ver=180820">
+<link rel="stylesheet" href="/style.css?ver=180820">
+<link rel="stylesheet" href="https://0korea.com/skin/shop/basic/style.css?ver=180820">
+<!--[if lte IE 8]>
+<script src="https://0korea.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://0korea.com";
+var g5_bbs_url   = "https://0korea.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+var g5_theme_shop_url = "https://0korea.com/theme/basic/shop";
+var g5_shop_url = "https://0korea.com/shop";
+</script>
+<script src="https://0korea.com/js/jquery-1.8.3.min.js"></script>
+<script src="https://0korea.com/js/jquery.shop.menu.js?ver=220637"></script>
+<script src="https://0korea.com/js/common.js?ver=220637"></script>
+<script src="https://0korea.com/js/wrest.js?ver=220637"></script>
+<script src="https://0korea.com/js/placeholders.min.js"></script>
+<script src="https://0korea.com/theme/basic/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://0korea.com/theme/basic/css/bootstrap.css" type="text/css">
+<!-- <link rel="stylesheet" href="https://0korea.com/js/font-awesome/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://0korea.com/theme/basic/css/arita/font.css" type="text/css">
+<script src="https://0korea.com/js/jquery.bxslider.js?ver=180820"></script>
+<script src="https://0korea.com/theme/basic/js/owl.carousel.min.js?ver=180820"></script>
+<script src="https://0korea.com/theme/basic/js/jquery.shop.list.js?ver=180820"></script>
+<script src="https://0korea.com/theme/basic/js/Ublue-jQueryTabs-1.2.js?ver=180820"></script>
+</head>
+<body>
+
+
+<!-- 상단 시작 { -->
+<div id="hd">
+    <h1 id="hd_h1">테스트서버</h1>
+
+    <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+
+    
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->    <div id="hd_top_wrapper">
+		<ul id="hd_top_right">
+									<div></div>
+					</ul>
+		<ul id="hd_top_right">
+						<li class="pop_join_btn join_btn"><a>로그인 / 회원가입</a></li>
+							<li><a>고객센터</a></li>
+		</ul>
+	</div>
+    <div id="hd_wrapper">
+    	<div id="hd_wr">
+			<div id="logo"><a href="https://0korea.com/shop/"><img src="https://0korea.com/theme/basic/img/logo.png" alt="테스트서버"></a></div>
+	        <fieldset id="hd_sch">
+	            <legend>쇼핑몰 검색</legend>
+	            <form name="frmsearch1" action="https://0korea.com/shop/search.php" onsubmit="return search_submit(this);">
+	            <label for="sch_stx" class="sound_only">검색어 필수</label>
+	                <div class="sch_ipt">
+	            		<label for="sch_str" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+	            		<input type="text" name="q" class="sch_stx" value="" id="sch_str" required placeholder="검색어를 입력해주세요">
+	            		<button type="submit" id="sch_submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
+	            	</div>
+	            </form>
+            </fieldset>
+			<!-- <p></p> -->
+            <script>
+            function search_submit(f) {
+                if (f.q.value.length < 2) {
+                    alert("검색어는 두글자 이상 입력하십시오.");
+                    f.q.select();
+                    f.q.focus();
+                    return false;
+                }
+                return true;
+            }
+            </script>
+			<ul id="hd_qnb">
+							<li><a href="#" class="pop_join_btn"><i class="fa fa-user"></i><br>마이페이지</a></li>
+						<li class="hd_gnb_cart"><a href="https://0korea.com/shop/cart.php"><i class="fa fa-shopping-cart"></i><br>장바구니<span class="cart_count">0</span></a></li>
+	        	<li>
+	        		<!-- 					<button class="pop_join_btn join_btn">로그인/회원가입</button>
+	        		<button class="login_btn">로그인</button>
+	        		<button onclick="location.href='https://0korea.com/bbs/register.php'" class="logout_btn join_btn">회원가입
+	        			<div id="animated-example" class="animated bounce">2000</div>
+					</button>
+	        		 -->
+					<div id="join_menu">
+						<div class="member_div" id="join_div">
+						</div>
+						<div class="bg"></div>
+					</div>
+	        		<div id="member_menu">
+						<div class="member_div">
+							
+<!-- 로그인 전 아웃로그인 시작 { -->
+<section id="ol_before" class="ol">
+    <h2>로그인</h2>
+    <p>다양한 서비스와 이벤트 혜택을 누리실 수 있습니다.</p>
+    <form name="foutlogin" action="https://0korea.com/bbs/login_check.php" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
+    <fieldset>
+        <div class="ol_wr">
+            <input type="hidden" name="url" value="https%3A%2F%2F0korea.comshop%2F">
+            <label for="ol_id" id="ol_idlabel" class="sound_only">회원아이디<strong>필수</strong></label>
+            <span class="sound_only">아이디</span>
+            <input type="text" id="ol_id" name="mb_id" required maxlength="255" placeholder="아이디">
+            <label for="ol_pw" id="ol_pwlabel" class="sound_only">비밀번호<strong>필수</strong></label>
+            <span class="sound_only">비밀번호</span>
+            <input type="password" name="mb_password" id="ol_pw" required maxlength="255" placeholder="비밀번호">
+            <div id="ol_auto">
+                <input type="checkbox" name="auto_login" value="1" id="auto_login">
+                <label for="auto_login" id="auto_login_label">자동로그인</label>
+            </div>
+            <button type="submit" id="ol_submit" class="btn_b02">로그인</button>
+        </div>
+    </fieldset>
+    </form>
+    
+    <div id="ol_svc">
+        <a href="https://0korea.com/bbs/register.php"><b>회원가입</b></a>
+        <a href="https://0korea.com/bbs/password_lost.php" id="ol_password_lost">정보찾기</a>
+    </div>
+    
+<div class="login-sns sns-wrap-over" id="sns_outlogin">
+    <!-- <div class="sns-head">12345 소셜계정으로 로그인</div> -->
+    <div class="sns-wrap">
+                <a href="https://0korea.com/plugin/social/popup.php?outjoin=outjoin&provider=naver&amp;url=https://0korea.comshop/" class="sns-icon social_link sns-naver" title="네이버">
+            <span class="ico"></span>
+            <span class="txt"><i></i></span>
+        </a>
+                        <a href="https://0korea.com/plugin/social/popup.php?outjoin=outjoin&provider=kakao&amp;url=https://0korea.comshop/" class="sns-icon social_link sns-kakao" title="카카오">
+            <span class="ico"></span>
+            <span class="txt"><i></i></span>
+        </a>
+                        <a href="https://0korea.com/plugin/social/popup.php?outjoin=outjoin&provider=facebook&amp;url=https://0korea.comshop/" class="sns-icon social_link sns-facebook" title="페이스북">
+            <span class="ico"></span>
+            <span class="txt"><i></i></span>
+        </a>
+                        <a href="https://0korea.com/plugin/social/popup.php?outjoin=outjoin&provider=google&amp;url=https://0korea.comshop/" class="sns-icon social_link sns-google" title="구글">
+            <span class="ico"></span>
+            <span class="txt"><i></i></span>
+        </a>
+                        
+                <script>
+            jQuery(function($){
+                $(".sns-wrap").on("click", "a.social_link", function(e){
+                    e.preventDefault();
+
+                    var pop_url = $(this).attr("href");
+                    var newWin = window.open(
+                        pop_url, 
+                        "social_sing_on", 
+                        "location=0,status=0,scrollbars=1,width=600,height=500"
+                    );
+
+                    if(!newWin || newWin.closed || typeof newWin.closed=='undefined')
+                         alert('브라우저에서 팝업이 차단되어 있습니다. 팝업 활성화 후 다시 시도해 주세요.');
+
+                    return false;
+                });
+            });
+        </script>
+        
+    </div>
+</div>        
+</section>
+<button class="login_cls_btn"><i class="fa fa-times" aria-hidden="true"></i><span class="sound_only">닫기</span></button>
+
+<script>
+$omi = $('#ol_id');
+$omp = $('#ol_pw');
+$omi_label = $('#ol_idlabel');
+$omi_label.addClass('ol_idlabel');
+$omp_label = $('#ol_pwlabel');
+$omp_label.addClass('ol_pwlabel');
+
+$(function() {
+
+    $("#auto_login").click(function(){
+        if ($(this).is(":checked")) {
+            if(!confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?"))
+                return false;
+        }
+    });
+});
+
+function fhead_submit(f)
+{
+    return true;
+}
+</script>
+<!-- } 로그인 전 아웃로그인 끝 -->
+  
+							
+
+<script>
+$(function(){    
+	$('.sb_bn').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    autoplay:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        430:{
+	            items:1
+	        },
+	        600:{
+	            items:1
+	        }
+	    }
+	})
+});
+</script>
+						</div>
+						<div class="bg"></div>
+					</div>
+					<script>
+				    $(function(){
+				        $(".login_btn").click(function(){
+				            $("#member_menu").toggle();
+				        });
+				        $(".login_cls_btn").click(function(){
+				            $("#member_menu").hide();
+				        });
+						$(".pop_join_btn").click(function(){
+				            $("#join_menu").toggle();
+							$.ajax({
+								type: "POST",
+								url : "https://0korea.com/bbs/ajax.outjoin.php",
+								data: {"calltype":"outjoin"},
+								dataType: "html", 
+								success: function(res){
+									$("#join_div").html(res);
+								},
+								error:function(){  
+									//에러가 났을 경우 실행시킬 코드
+								}
+							})
+							
+				        });
+						$(document).on('click', ".join_cls_btn", function(){
+				            $("#join_menu").hide();
+				        });
+				    });
+					</script>
+	        	</li>
+	        </ul> 
+		</div>
+    </div>
+    <nav id="gnb" class="font">
+		<div>
+			<button type="button" id="menu_open"><i class="fa fa-bars" aria-hidden="true"></i> 전체상품</button>
+    		<ul class="gnb_shortcut">
+				<li><a href="https://0korea.com/shop/listtype.php?type=1">히트상품</a></li>
+				<li><a href="https://0korea.com/shop/listtype.php?type=2">추천상품</a></li>
+				<li><a href="https://0korea.com/shop/listtype.php?type=3">최신상품</a></li>
+				<li><a href="https://0korea.com/shop/listtype.php?type=4">인기상품</a></li>
+				<li><a href="https://0korea.com/shop/listtype.php?type=5">할인상품</a></li>
+				<li class="event"><a href=""><i class="fas fa-gift"></i> 이벤트/쿠폰존</a></li>
+			</ul>
+		</div>
+		<div id="location_menu">
+			<img src="../img/flag.png" alt=""/>
+			충주/KO <span>KRW</span>
+			<i class="fa fa-caret-down" aria-hidden="true"></i>
+		</div>
+		
+    	<!-- <ul class="tnb_right">
+    		<li><a href="https://0korea.com/bbs/faq.php">FAQ</a></li>
+			<li><a href="https://0korea.com/bbs/qalist.php">1:1문의</a></li>
+    		<li><a href="https://0korea.com/shop/personalpay.php">개인결제</a></li>
+    		<li><a href="https://0korea.com/shop/itemuselist.php">사용후기</a></li>
+    		<li><a href="https://0korea.com/shop/couponzone.php">쿠폰존</a></li>
+		</ul> -->
+    	<div id="category">
+    <button type="button" class="close_btn">
+        <i class="fa fa-times" aria-hidden="true"></i> 메뉴닫기
+        <span class="sound_only">카테고리 닫기</span>
+    </button>
+    <div class="ct_wr">
+                    <ul class="cate">
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=01" class="cate_li_1_a">
+                            패션/신발/가방                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0101">
+                                            가방/패션잡화                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0102">
+                                            여성의류                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0103">
+                                            남성의류                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0104">
+                                            언더웨어                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0105">
+                                            신발                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0106">
+                                            쥬얼리/시계/선글라스                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=02" class="cate_li_1_a">
+                            브랜드패션/수입                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0201">
+                                            브랜드 여성의류                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0202">
+                                            브랜드 남성의류                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0203">
+                                            브랜드 진/캐주얼의류                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0204">
+                                            브랜드 아동패션                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0205">
+                                            브랜드 언더웨어                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0206">
+                                            브랜드 신발/가방/잡화                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0207">
+                                            브랜드 시계/쥬얼리                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0208">
+                                            수입명품                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0209">
+                                            백화점/제화상품권                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=03" class="cate_li_1_a">
+                            식품/음료/건강                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0301">
+                                            쌀/과일/농수축산물                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0302">
+                                            즉석/간식/가공식품                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0303">
+                                            커피/음료                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0304">
+                                            다이어트식품                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0305">
+                                            건강식품                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=04" class="cate_li_1_a">
+                            화장지/세제/화장품                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0401">
+                                            화장지/물티슈/생리대                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0402">
+                                            화장품/향수                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0403">
+                                            세제/구강                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0404">
+                                            바디/헤어                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=05" class="cate_li_1_a">
+                            유아동/출산                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0501">
+                                            유아동의류                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0502">
+                                            유아동신발/가방/잡화                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0503">
+                                            기저귀/분유/유아식                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0504">
+                                            출산/유아용품/임부복                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=06" class="cate_li_1_a">
+                            가구/생활/문구                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0601">
+                                            가구/DIY                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0602">
+                                            침구/커튼                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0603">
+                                            조명/인테리어                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0604">
+                                            생활/욕실/수납용품                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=07" class="cate_li_1_a">
+                            자동차/자전거/보드                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0701">
+                                            자동차용품                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0702">
+                                            타이어/오일/부품                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0703">
+                                            자전거/보드                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=08" class="cate_li_1_a">
+                            디지털가전/렌탈                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0801">
+                                            휴대폰                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0802">
+                                            태블릿                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0803">
+                                            노트북/PC                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0804">
+                                            모니터/프린터                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0805">
+                                            PC주변기기                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0806">
+                                            카메라                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0807">
+                                            저장장치                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0808">
+                                            대형가전                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0809">
+                                            계절가전                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0810">
+                                            주방가전                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0811">
+                                            생활/미용가전                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0812">
+                                            음향기기                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0813">
+                                            게임                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0814">
+                                            e쿠폰/모바일상품권                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0815">
+                                            건강/의료용품                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0816">
+                                            렌탈 서비스                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=09" class="cate_li_1_a">
+                            스포츠/캠핑/골프                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0901">
+                                            스포츠의류/운동화                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0902">
+                                            캠핑/낚시                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0903">
+                                            휘트니스/수영                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0904">
+                                            골프                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0905">
+                                            구기/라켓                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=0906">
+                                            등산/아웃도어                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=10" class="cate_li_1_a">
+                            취미/악기/반려동물                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=1001">
+                                            장난감/교육완구/인형                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=1002">
+                                            악기/취미                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=1003">
+                                            반려동물용품                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                    <li class="cate_li_1">
+                        <a href="https://0korea.com/shop/list.php?ca_id=11" class="cate_li_1_a">
+                            도서/음반/여행                        </a>
+                                                    <ul class="sub_cate sub_cate1">
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=1101">
+                                            도서/교육/음반                                        </a>
+                                    </li>
+                                                                    <li class="cate_li_2">
+                                        <a href="https://0korea.com/shop/list.php?ca_id=1102">
+                                            여행/항공권                                        </a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                            </ul>
+            </div>
+</div>
+
+
+<script>
+$(function (){
+    var $category = $("#category");
+
+    $("#menu_open").on("click", function() {
+        $category.css("display","block");
+    });
+
+    $("#category .close_btn").on("click", function(){
+        $category.css("display","none");
+    });
+});
+$(document).mouseup(function (e){
+	var container = $("#category");
+	if( container.has(e.target).length === 0)
+	container.hide();
+});
+</script>
+   	</nav>
+</div>
+
+<div id="wrapper">
+    <!-- 콘텐츠 시작 { -->
+    <div id="container">
+                <!-- 글자크기 조정 display:none 되어 있음 시작 { -->
+        <!-- <div id="text_size">
+            <button class="no_text_resize" onclick="font_resize('container', 'decrease');">작게</button>
+            <button class="no_text_resize" onclick="font_default('container');">기본</button>
+            <button class="no_text_resize" onclick="font_resize('container', 'increase');">크게</button>
+        </div> -->
+        <!-- } 글자크기 조정 display:none 되어 있음 끝 -->
+
+		<div id="container_inner" class="container"><!-- left nav -->
+<!-- <section id="idx_banner">
+		<div id="idx_bn_link">
+		<div id="bn_cnt_link">
+			<ul>
+				<li><a href="https://0korea.com/shop/itemuselist.php"><i class="fas fa-shopping-basket"></i><br>사용후기</a></li>
+				<li><a href=""><i class="fas fa-gift"></i><br>이벤트</a></li>
+				<li><a href=""><i class="fas fa-grin-alt"></i><br>커뮤니티</a></li>
+				<li><a href="https://0korea.com/bbs/qalist.php"><i class="fas fa-comment-dots"></i><br>문의</a></li>
+			</ul>
+		</div>
+	</div>
+</section> -->
+<section class="main_banner">
+	<div class="main_banner_wrapper">
+		<h2>영코리아에 오신것을 환영합니다!</h2>
+		<p>간결한 영코리아에 대한 디스크립션 영역입니다</p>
+		<button>소개영상 보기</button>
+	</div>
+</section>	
+<section class="main_lg">
+	<div class="main_lg_wrapper">
+		<ul class="lg_wrapper_list">
+		협찬 로고 리스트 슬라이드 영역
+
+			<!-- <li><div class="lg_logo"></div><p>경산시</p></li>
+			<li><div class="lg_logo"></div><p>경주시</p></li>
+			<li><div class="lg_logo"></div><p>구미시</p></li>
+			<li><div class="lg_logo"></div><p>김천시</p></li>
+			<li><div class="lg_logo"></div><p>문경시</p></li>
+			<li><div class="lg_logo"></div><p>상주시</p></li>
+			<li><div class="lg_logo"></div><p>안동시</p></li>
+			<li><div class="lg_logo"></div><p>영천시</p></li>
+			<li><div class="lg_logo"></div><p>포항시</p></li>
+			<li><div class="lg_logo"></div><p>고령군</p></li> -->
+		</ul>
+		<ul class="lg_list_nav">
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</section>
+
+<!-- 히트상품 시작 { -->
+<section class="main" >
+	<h6><a href="https://0korea.com/shop/listtype.php?type=1" class="main_tit">히트상품</a></h6>
+	<div class="sale_prd">
+	 <!-- 인기상품 추천상품 영역 -->
+
+<ul class="sct sct_20">
+<li class="sct_li sct_li_1 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1745217406'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1745217406">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="test">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1745217406"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1745217406">
+test
+</a></div>
+<div class="sct_basic">test descripti</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩5,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_2 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738843368'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738843368">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738843368/thumb-600_2_230x230.jpg" width="230" height="230" alt="100% 국내산 안동 햇 마씨앗 1kg,2kg,3kg,5kg,10kg">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738843368"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738843368">
+100% 국내산 안동 햇 마씨앗 1kg,2kg,3kg,5kg,10kg
+</a></div>
+<div class="sct_basic">마씨앗 10알 = 마 1뿌</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩10,800원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>5.0 (+2)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_3 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738842669'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738842669">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738842669/thumb-TV__230x230.jpg" width="230" height="230" alt="해남 인디언감자 아피오스">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738842669"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738842669">
+해남 인디언감자 아피오스
+</a></div>
+<div class="sct_basic">6시내고향 TV방영</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩15,000원</span>
+<span class="sct_discount_rate"><span class='sct_percent'>%27</span></span> ₩11,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>5.0 (+1)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_4 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738841186'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738841186">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738841186/thumb-64yA7ZGc_7LSI64u5_230x230.jpg" width="230" height="230" alt="[5월부터 발송] 초당옥수수 인기절정 꿀맛">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738841186"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738841186">
+[5월부터 발송] 초당옥수수 인기절정 꿀맛
+</a></div>
+<div class="sct_basic">초콜릿보다 더 달달</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩1,200원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_5 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738740491'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738740491">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738740491/thumb-7ZmN7LKc6rCV7YC064W47JWE7JiB64aN7KGw7ZWp67KV7J24_7Iuc656Y6riw_64yA7ZGc7J206647KeA2_230x230.jpg" width="230" height="230" alt="웰품 생무청 삶은 시래기 300g x 2팩 3팩 4팩 6팩 8팩">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738740491"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738740491">
+웰품 생무청 삶은 시래기 300g x 2팩 3팩 4팩 6팩 8팩
+</a></div>
+<div class="sct_basic">섬유질이 생생하게 살아있어</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩9,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_6 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738672832'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738672832">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="[두미원] 100% 국내산 대두 청국장 1kg 6개 낱개포장">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738672832"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738672832">
+[두미원] 100% 국내산 대두 청국장 1kg 6개 낱개포장
+</a></div>
+<div class="sct_basic">콩알콩알 전통방식 그대로</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩16,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_7 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738292921'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738292921">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738292921/thumb-soybean_paste0600_230x230.jpg" width="230" height="230" alt="[두미원] 국산콩 100% 참된장 1kg 가마솥 자연발효">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738292921"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738292921">
+[두미원] 국산콩 100% 참된장 1kg 가마솥 자연발효
+</a></div>
+<div class="sct_basic">전통방식 자연발효 항아리숙성</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩22,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_8 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1737723579'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1737723579">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1737723579/thumb-beet600_6_230x230.jpg" width="230" height="230" alt="햇 비트 햇 코끼리마늘 토종작물 한국고유종">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1737723579"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1737723579">
+햇 비트 햇 코끼리마늘 토종작물 한국고유종
+</a></div>
+<div class="sct_basic">해남 화희정 무료배송</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩11,700원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_9 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1737529119'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1737529119">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1737529119/thumb-0101_230x230.jpg" width="230" height="230" alt="[가을배추 예약] 괴산절임배추 20kg 괴산영농조합법인">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1737529119"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1737529119">
+[가을배추 예약] 괴산절임배추 20kg 괴산영농조합법인
+</a></div>
+<div class="sct_basic">청결버블세척2회+손세척5회</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩150,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_10 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849270'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849270">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest1">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849270"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849270">
+ksjtest1
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+</ul>
+
+<script>
+jQuery(function($){
+    // 이벤트 캡처링 단계에서 처리 (true를 추가)
+    $('.sct_li').on('click', function(e) {
+        if($(e.target).closest('.btn_cart').length || $(e.target).hasClass('btn_cart')) {
+            e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+            return false;
+        }
+    }, true);
+
+    // 장바구니 버튼 클릭 시
+    $(document).on('click', '.btn_cart', function(e) {
+        e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+    });
+});
+</script>	</div>
+</section>
+<!-- } 히트상품 끝 -->
+
+
+<!-- 추천상품 시작 { -->
+<section class="main2">
+	<h6><a href="https://0korea.com/shop/listtype.php?type=2" class="main_tit">추천상품</a></h6>
+	<div class="sct_wrap">
+	    <!-- 인기상품 추천상품 영역 -->
+
+<ul class="sct sct_20">
+<li class="sct_li sct_li_1 sct_clear" style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738842669'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738842669">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738842669/thumb-TV__190x190.jpg" width="190" height="190" alt="해남 인디언감자 아피오스">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738842669"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738842669">
+해남 인디언감자 아피오스
+</a></div>
+<div class="sct_basic">6시내고향 TV방영</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩15,000원</span>
+<span class="sct_discount_rate"><span class='sct_percent'>%27</span></span> ₩11,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>5.0 (+1)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_2 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738842097'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738842097">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738842097/thumb-KakaoTalk_20241104_120006878_860_190x190.jpg" width="190" height="190" alt="햇 코끼리마늘 한국고유종 /햇 비트 국내산 토종작물">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738842097"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738842097">
+햇 코끼리마늘 한국고유종 /햇 비트 국내산 토종작물
+</a></div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩11,700원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_3 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738742965'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738742965">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738742965/thumb-600_02_190x190.jpg" width="190" height="190" alt="각관 조인트 벽고정 브라켓 소켓 58종">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738742965"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738742965">
+각관 조인트 벽고정 브라켓 소켓 58종
+</a></div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩2,390원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_4 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738740102'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738740102">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738740102/thumb-KakaoTalk_20210115_120102767_01_190x190.jpg" width="190" height="190" alt="웰품 누룽지향 고향찰현미">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738740102"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738740102">
+웰품 누룽지향 고향찰현미
+</a></div>
+<div class="sct_basic">밥이 식어도 쫀득 윤기 좔</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩9,480원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_5 sct_last" style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738672625'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738672625">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738672625/thumb-7L2p7JWM7L2p7JWM65GQ6647JuQ67Cx66464iE66O97KeA64yA7ZGc7J206647KeA1_190x190.png" width="190" height="190" alt="[두미원] 100% 국내 해남산 햅쌀 누룽지 500g 2봉">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738672625"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738672625">
+[두미원] 100% 국내 해남산 햅쌀 누룽지 500g 2봉
+</a></div>
+<div class="sct_basic">현미 백미 누룽지 500g</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩20,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_6 sct_clear" style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1737799122'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1737799122">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1737799122/thumb-Gochujang600_4_190x190.jpg" width="190" height="190" alt="[두미원] 100%국내산 찰고추장 전통방식 항아리숙성">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1737799122"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1737799122">
+[두미원] 100%국내산 찰고추장 전통방식 항아리숙성
+</a></div>
+<div class="sct_basic">전통방식 항아리숙성</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩27,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_7 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1737721659'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1737721659">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1737721659/thumb-carrot600_5_190x190.jpg" width="190" height="190" alt="[2월초 배송예약] 햇 자색당근 해남 황희정 산지직송">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1737721659"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1737721659">
+[2월초 배송예약] 햇 자색당근 해남 황희정 산지직송
+</a></div>
+<div class="sct_basic">햇 자색당근 세척 무세척 </div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩13,600원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_8 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1722034704'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1722034704">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="테스트">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1722034704"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1722034704">
+테스트
+</a></div>
+<div class="sct_basic">테스트</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩50,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_9 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849260'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849260">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest11">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849260"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849260">
+ksjtest11
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_10 sct_last" style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849259'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849259">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest12">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849259"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849259">
+ksjtest12
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_11 sct_clear" style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849258'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849258">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest13">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849258"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849258">
+ksjtest13
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_12 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849257'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849257">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest14">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849257"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849257">
+ksjtest14
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_13 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849256'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849256">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest15">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849256"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849256">
+ksjtest15
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_14 " style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849255'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849255">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest16">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849255"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849255">
+ksjtest16
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_15 sct_last" style="width:190px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849254'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849254">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="190" height="190" alt="ksjtest17">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849254"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849254">
+ksjtest17
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+</ul>
+
+<script>
+jQuery(function($){
+    // 이벤트 캡처링 단계에서 처리 (true를 추가)
+    $('.sct_li').on('click', function(e) {
+        if($(e.target).closest('.btn_cart').length || $(e.target).hasClass('btn_cart')) {
+            e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+            return false;
+        }
+    }, true);
+
+    // 장바구니 버튼 클릭 시
+    $(document).on('click', '.btn_cart', function(e) {
+        e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+    });
+});
+</script>	</div>
+</section>
+<!-- } 추천상품 끝 -->
+
+<!-- 인기상품 시작 { -->
+<section class="main3">
+	<div class="sale_prd">
+	    <h6><a href="https://0korea.com/shop/listtype.php?type=4" class="main_tit">인기상품</a></h6>
+	    <!-- 인기상품 추천상품 영역 -->
+
+<ul class="sct sct_20">
+<li class="sct_li sct_li_1 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738843368'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738843368">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738843368/thumb-600_2_230x230.jpg" width="230" height="230" alt="100% 국내산 안동 햇 마씨앗 1kg,2kg,3kg,5kg,10kg">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738843368"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738843368">
+100% 국내산 안동 햇 마씨앗 1kg,2kg,3kg,5kg,10kg
+</a></div>
+<div class="sct_basic">마씨앗 10알 = 마 1뿌</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩10,800원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>5.0 (+2)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_2 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738841600'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738841600">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738841600/thumb-carrot600_4_230x230.jpg" width="230" height="230" alt="햇 자색당근 해남 황희정 산지직송 세척 무세척 선택">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738841600"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738841600">
+햇 자색당근 해남 황희정 산지직송 세척 무세척 선택
+</a></div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩13,600원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_3 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738741511'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738741511">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738741511/thumb-7Jyg66as600_230x230.jpg" width="230" height="230" alt="현무암 벽돌 디딤돌 정원 바닥재 가벽 콘크리트 유리">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738741511"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738741511">
+현무암 벽돌 디딤돌 정원 바닥재 가벽 콘크리트 유리
+</a></div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩11,900원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_4 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738673196'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738673196">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738673196/thumb-soybean_paste0600_2_230x230.jpg" width="230" height="230" alt="[두미원] 국산콩 100% 참된장 1kg 항아리숙성">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738673196"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738673196">
+[두미원] 국산콩 100% 참된장 1kg 항아리숙성
+</a></div>
+<div class="sct_basic">전통방식 가마솥 자연발효</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩22,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_5 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738668138'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738668138">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738668138/thumb-600_3_230x230.jpg" width="230" height="230" alt="멕시코 감자 (히카마/얌빈)국내생산 생과">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738668138"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738668138">
+멕시코 감자 (히카마/얌빈)국내생산 생과
+</a></div>
+<div class="sct_basic">[세계 20대 건강식품 선</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩47,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_6 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1737798390'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1737798390">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1737798390/thumb-Nurungji600_230x230.jpg" width="230" height="230" alt="[두미원]100%국내산 햅쌀 누룽지 500g 2봉 현미 백미">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1737798390"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1737798390">
+[두미원]100%국내산 햅쌀 누룽지 500g 2봉 현미 백미
+</a></div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩20,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_7 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849245'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849245">
+<div class="sct_icon"><span class="sit_icon"><span class="shop_icon_soldout">SOLD OUT</span></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest26">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849245"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849245">
+ksjtest26
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_8 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849244'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849244">
+<div class="sct_icon"><span class="sit_icon"><span class="shop_icon_soldout">SOLD OUT</span></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest27">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849244"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849244">
+ksjtest27
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_9 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849243'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849243">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest28">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849243"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849243">
+ksjtest28
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_10 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849242'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849242">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest29">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849242"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849242">
+ksjtest29
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_11 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849241'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849241">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest30">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849241"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849241">
+ksjtest30
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_12 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849240'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849240">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest31">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849240"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849240">
+ksjtest31
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_13 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849239'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849239">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest32">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849239"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849239">
+ksjtest32
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_14 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849238'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849238">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest33">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849238"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849238">
+ksjtest33
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_15 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849237'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849237">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest34">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849237"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849237">
+ksjtest34
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_16 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849236'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849236">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest35">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849236"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849236">
+ksjtest35
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_17 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849235'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849235">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest36">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849235"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849235">
+ksjtest36
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_18 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849234'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849234">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest37">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849234"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849234">
+ksjtest37
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_19 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849233'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849233">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest38">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849233"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849233">
+ksjtest38
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_20 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849232'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849232">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest39">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849232"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849232">
+ksjtest39
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+</ul>
+
+<script>
+jQuery(function($){
+    // 이벤트 캡처링 단계에서 처리 (true를 추가)
+    $('.sct_li').on('click', function(e) {
+        if($(e.target).closest('.btn_cart').length || $(e.target).hasClass('btn_cart')) {
+            e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+            return false;
+        }
+    }, true);
+
+    // 장바구니 버튼 클릭 시
+    $(document).on('click', '.btn_cart', function(e) {
+        e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+    });
+});
+</script>	</div>
+</section>
+<!-- } 인기상품 끝 -->
+
+<!-- 할인상품 시작 { -->
+<section class="main4">
+	<div class="sct_wrap">
+	    <h6><a href="https://0korea.com/shop/listtype.php?type=5" class="main_tit">할인상품</a></h6>
+	    <!-- 인기상품 추천상품 영역 -->
+
+<ul class="sct sct_20">
+<li class="sct_li sct_li_1 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738842097'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738842097">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738842097/thumb-KakaoTalk_20241104_120006878_860_230x230.jpg" width="230" height="230" alt="햇 코끼리마늘 한국고유종 /햇 비트 국내산 토종작물">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738842097"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738842097">
+햇 코끼리마늘 한국고유종 /햇 비트 국내산 토종작물
+</a></div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩11,700원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_2 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738741212'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738741212">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738741212/thumb-7ZmN7LKc6rCV7YC064W47JWE7JiB64aN7KGw7ZWp67KV7J24_7LKt7LCo7KGw_64yA7ZGc7J206647KeA2_230x230.jpg" width="230" height="230" alt="웰품 유기농 청차조 500g 1kg 1.5kg 2kg 유기농 인증">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738741212"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738741212">
+웰품 유기농 청차조 500g 1kg 1.5kg 2kg 유기농 인증
+</a></div>
+<div class="sct_basic">유기농 인증</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩13,080원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_3 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738673046'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738673046">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1738673046/thumb-Gochujang600_230x230.jpg" width="230" height="230" alt="[두미원] 국내산 100% 해남 찰고추장 전통방식">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738673046"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738673046">
+[두미원] 국내산 100% 해남 찰고추장 전통방식
+</a></div>
+<div class="sct_basic">콩알콩알 전통방식 항아리숙</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩27,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_4 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1738563122'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1738563122">
+<div class="sct_icon"><span class="sit_icon"><span class="shop_icon_soldout">SOLD OUT</span></span></div>
+<img src="https://0korea.com/data/item/1738563122/thumb-600_1_230x230.jpg" width="230" height="230" alt="[가을도착예약] 괴산 절임배추 20kg">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1738563122"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1738563122">
+[가을도착예약] 괴산 절임배추 20kg
+</a></div>
+<div class="sct_basic">전자동버블세척2회+손세척3</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩165,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_5 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1737796705'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1737796705">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/data/item/1737796705/thumb-1_230x230.jpg" width="230" height="230" alt="[두미원] 해남 강정 오란다 18g 18개">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1737796705"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1737796705">
+[두미원] 해남 강정 오란다 18g 18개
+</a></div>
+<div class="sct_basic">20여년 정통식품 경력</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩13,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_6 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1687842462'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1687842462">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="test">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1687842462"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1687842462">
+test
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩0원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_7 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849224'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849224">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest47">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849224"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849224">
+ksjtest47
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_8 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849223'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849223">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest48">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849223"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849223">
+ksjtest48
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_9 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849222'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849222">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest49">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849222"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849222">
+ksjtest49
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_10 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849221'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849221">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest50">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849221"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849221">
+ksjtest50
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_11 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849220'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849220">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest51">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849220"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849220">
+ksjtest51
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_12 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849219'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849219">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest52">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849219"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849219">
+ksjtest52
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_13 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849218'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849218">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest53">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849218"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849218">
+ksjtest53
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_14 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849217'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849217">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest54">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849217"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849217">
+ksjtest54
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_15 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849216'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849216">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest55">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849216"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849216">
+ksjtest55
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_16 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849215'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849215">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest56">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849215"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849215">
+ksjtest56
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_17 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849214'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849214">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest57">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849214"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849214">
+ksjtest57
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_18 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849213'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849213">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest58">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849213"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849213">
+ksjtest58
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_19 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849212'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849212">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest59">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849212"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849212">
+ksjtest59
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_20 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849211'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849211">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest60">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849211"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849211">
+ksjtest60
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_21 sct_clear" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849210'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849210">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest61">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849210"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849210">
+ksjtest61
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_22 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849209'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849209">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest62">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849209"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849209">
+ksjtest62
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_23 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849208'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849208">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest63">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849208"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849208">
+ksjtest63
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_24 " style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849207'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849207">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest64">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849207"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849207">
+ksjtest64
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+<li class="sct_li sct_li_25 sct_last" style="width:230px" onclick="if(!event.target.closest('.btn_cart') && !event.target.closest('.sct_cartop')) location.href='https://0korea.com/shop/item.php?it_id=1539849206'">
+<div class="sct_20_wrap">
+<div class="sct_img">
+<a href="https://0korea.com/shop/item.php?it_id=1539849206">
+<div class="sct_icon"><span class="sit_icon"></span></div>
+<img src="https://0korea.com/shop/img/no_image.gif" width="230" height="230" alt="ksjtest65">
+</a>
+<div class="sct_btn">
+            <div class="sct_cart_btn">
+                <button type="button" class="btn_cart sct_cart" data-it_id="1539849206"><i class="fas fa-cart-arrow-down"></i><span class="sound_only">장바구니</span></button>
+            </div>
+        </div>
+<div class="sct_cartop"></div>
+</div>
+<div class="sct_cnt">
+<div class="sct_txt"><a href="https://0korea.com/shop/item.php?it_id=1539849206">
+ksjtest65
+</a></div>
+<div class="sct_basic">test</div>
+<div class="sct_cost">
+<span class="sct_discount"> ₩0원</span>
+₩3,000원
+</div>
+<div class="sct_rate">
+        <i class="fa fa-star"></i> <span>0.0 (+0)</span>
+        </div>
+</div>
+</div>
+</li>
+</ul>
+
+<script>
+jQuery(function($){
+    // 이벤트 캡처링 단계에서 처리 (true를 추가)
+    $('.sct_li').on('click', function(e) {
+        if($(e.target).closest('.btn_cart').length || $(e.target).hasClass('btn_cart')) {
+            e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+            return false;
+        }
+    }, true);
+
+    // 장바구니 버튼 클릭 시
+    $(document).on('click', '.btn_cart', function(e) {
+        e.stopImmediatePropagation(); // 더 강력한 이벤트 전파 중단
+    });
+});
+</script>	</div>
+</section>
+<!-- } 할인상품 끝 -->
+
+<script>
+$("#container_inner").removeClass("container").addClass("idx-container");
+</script>
+
+</div>
+    </div>
+    <!-- } 콘텐츠 끝 -->
+
+<!-- 하단 시작 { -->
+</div>
+
+<div id="quick" class="tab_wr">
+	
+	<!-- qk_innr start -->
+	<!-- <div class="qk_innr">
+	    <ul class="qk_btn">
+	    	<li>
+	    		<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+	    	</li>
+	        <li class="tab_my tabsTab">
+	            <a href="https://0korea.com/shop/mypage.php"><i class="fa fa-user" aria-hidden="true"></i><span class="sound_only">마이페이지 열기</span></a>
+	        </li>
+	        <li class="tab_cart tabsTab">
+	            <button type="button" class="cart_op_btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="sound_only">장바구니 열기</span></button>
+	        </li>
+	        <li class="tab_today tabsTab">
+	            <button type="button" class="view_op_btn"><i class="fa fa-archive" aria-hidden="true"></i><span class="sound_only">오늘본상품 열기</span></button>
+	        </li>
+			<li class="tab_wish tabsTab">
+				<button type="button" class="wish_op_btn"><i class="fa fa-heart" aria-hidden="true"></i><span class="sound_only">위시리스트 열기</span></button>
+	        </li>
+	    </ul>
+    </div> -->
+    <!-- qk_innr start -->
+
+    <!-- tabs_con start -->
+    <div class="tabs_con">
+    	
+        <div class="qk_con" id="qk_cart">
+            <div class="qk_con_wr">
+            	<h3><a href="https://0korea.com/shop/cart.php">장바구니</a></h3>
+	            <div class="hdqk_wr">
+	                <div class="hdqk_wr" id="q_cart_wr"></div>
+					<script>
+		            $(function(){
+		                $(".cart_op_btn").on("click", function() {
+		                    var $this = $(this);
+		
+		                    $("#q_cart_wr").load(
+		                        g5_theme_shop_url+"/ajax.cart.php",
+		                        function() {
+		                            $this.next(".hdqk_wr").show();
+		                        }
+		                    );
+		                });
+		            });
+		            </script>
+	            </div>
+            	<button type="button" class="con_close"><i class="fas fa-times"></i><span class="sound_only">장바구니 닫기</span></button>
+            </div>
+        </div>
+        
+        <div class="qk_con" id="qk_view">
+            <div class="qk_con_wr">
+            	<h3><span>오늘본상품</span></h3>
+            	
+<!-- 오늘 본 상품 시작 { -->
+<div id="stv">
+    <h2>오늘 본 상품</h2>
+
+        <ul id="stv_ul">
+<li class="stv_item c1">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1738672832"><img src="https://0korea.com/shop/img/no_image.gif" width="60" height="60" alt="[두미원] 100% 국내산 대두 청국장 1kg 6개 낱개포장"></a></div>
+<div class="prd_cnt"><span class="prd_name">[두미원] 100%
+</span><span class="prd_cost">16,000
+</span>
+</div>
+</li>
+<li class="stv_item c1">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1738843368"><img src="https://0korea.com/data/item/1738843368/thumb-600_2_60x60.jpg" width="60" height="60" alt="100% 국내산 안동 햇 마씨앗 1kg,2kg,3kg,5kg,10kg"></a></div>
+<div class="prd_cnt"><span class="prd_name">100% 국내산 안
+</span><span class="prd_cost">10,800
+</span>
+</div>
+</li>
+<li class="stv_item c1">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1738842669"><img src="https://0korea.com/data/item/1738842669/thumb-TV__60x60.jpg" width="60" height="60" alt="해남 인디언감자 아피오스"></a></div>
+<div class="prd_cnt"><span class="prd_name">해남 인디언감자 아
+</span><span class="prd_cost">11,000
+</span>
+</div>
+</li>
+<li class="stv_item c2">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1738672331"><img src="https://0korea.com/data/item/1738672331/thumb-2_60x60.jpg" width="60" height="60" alt="[두미원] 해남 강정 오란다 18g 18개"></a></div>
+<div class="prd_cnt"><span class="prd_name">[두미원] 해남 강
+</span><span class="prd_cost">13,000
+</span>
+</div>
+</li>
+<li class="stv_item c2">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1539849258"><img src="https://0korea.com/shop/img/no_image.gif" width="60" height="60" alt="ksjtest13"></a></div>
+<div class="prd_cnt"><span class="prd_name">ksjtest13
+</span><span class="prd_cost">3,000
+</span>
+</div>
+</li>
+<li class="stv_item c2">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1539849266"><img src="https://0korea.com/shop/img/no_image.gif" width="60" height="60" alt="ksjtest5"></a></div>
+<div class="prd_cnt"><span class="prd_name">ksjtest5
+</span><span class="prd_cost">3,000
+</span>
+</div>
+</li>
+<li class="stv_item c3">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1745217406"><img src="https://0korea.com/shop/img/no_image.gif" width="60" height="60" alt="test"></a></div>
+<div class="prd_cnt"><span class="prd_name">test
+</span><span class="prd_cost">5,000
+</span>
+</div>
+</li>
+<li class="stv_item c3">
+<div class="prd_img"><a href="https://0korea.com/shop/item.php?it_id=1738742965"><img src="https://0korea.com/data/item/1738742965/thumb-600_02_60x60.jpg" width="60" height="60" alt="각관 조인트 벽고정 브라켓 소켓 58종"></a></div>
+<div class="prd_cnt"><span class="prd_name">각관 조인트 벽고정
+</span><span class="prd_cost">2,390
+</span>
+</div>
+</li>
+</ul>
+        <div id="stv_btn"></div>
+        <span id="stv_pg"></span>
+
+        <script>
+        $(function() {
+            var itemQty = 8; // 총 아이템 수량
+            var itemShow = 3; // 한번에 보여줄 아이템 수량
+            if (itemQty > itemShow)
+            {
+                $('#stv_btn').append('<button type="button" id="up"><i class="fa fa-angle-left" aria-hidden="true"></i> 이전</button><button type="button" id="down">다음 <i class="fa fa-angle-right" aria-hidden="true"></i></button>');
+            }
+            var Flag = 1; // 페이지
+            var EOFlag = parseInt(8/itemShow); // 전체 리스트를 3(한 번에 보여줄 값)으로 나눠 페이지 최댓값을 구하고
+            var itemRest = parseInt(8%itemShow); // 나머지 값을 구한 후
+            if (itemRest > 0) // 나머지 값이 있다면
+            {
+                EOFlag++; // 페이지 최댓값을 1 증가시킨다.
+            }
+            $('.c'+Flag).css('display','block');
+            $('#stv_pg').text(Flag+'/'+EOFlag); // 페이지 초기 출력값
+            $('#up').click(function() {
+                if (Flag == 1)
+                {
+                    alert('목록의 처음입니다.');
+                } else {
+                    Flag--;
+                    $('.c'+Flag).css('display','block');
+                    $('.c'+(Flag+1)).css('display','none');
+                }
+                $('#stv_pg').text(Flag+'/'+EOFlag); // 페이지 값 재설정
+            })
+            $('#down').click(function() {
+                if (Flag == EOFlag)
+                {
+                    alert('더 이상 목록이 없습니다.');
+                } else {
+                    Flag++;
+                    $('.c'+Flag).css('display','block');
+                    $('.c'+(Flag-1)).css('display','none');
+                }
+                $('#stv_pg').text(Flag+'/'+EOFlag); // 페이지 값 재설정
+            });
+        });
+        </script>
+
+        
+</div>
+
+<!-- } 오늘 본 상품 끝 -->            	<button type="button" class="con_close"><i class="fas fa-times"></i><span class="sound_only">오늘본상품 닫기</span></button>
+            </div>
+        </div>
+
+        <div class="qk_con tabsList" id="qk_wish">
+            <div class="qk_con_wr">
+	            <h3><a href="https://0korea.com/shop/wishlist.php">위시리스트</a></h3>
+	            <ul class="qk_prdli">
+	            <li class="empty_list">보관 내역이 없습니다.</li>	            </ul>
+	            <button type="button" class="con_close"><i class="fas fa-times"></i><span class="sound_only">위시리스트닫기 </span></button>
+            </div>
+        </div>
+    </div>
+    <!-- tabs_con end -->
+    
+</div>
+
+<script>
+$(function() {
+    $("#top_btn").on("click", function() {
+        $("html, body").animate({scrollTop:0}, '500');
+        return false;
+    });
+});
+	
+$(function (){
+	$(".cart_op_btn").on("click", function(){
+		$("#qk_cart").show();
+    });
+	$(".view_op_btn").on("click", function(){
+		$("#qk_view").show();
+    });
+	$(".wish_op_btn").on("click", function(){
+		$("#qk_wish").toggle();
+    });
+    $(".con_close").on("click", function(){
+		$(".qk_con").hide();
+	});
+    $("#quick_open").on("click", function(){
+		$("#quick").toggle();
+    });
+});
+$(document).mouseup(function (e){
+    var container = $(".qk_con");
+    if( container.has(e.target).length === 0)
+    container.hide();
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        $("#quick").addClass("fix");
+    } else {
+        $("#quick").removeClass("fix");
+    }
+});
+</script>
+
+<div id="ft">
+    <div id="ft_wr">
+        <ul class="ft_ul">
+            <li><a href="https://0korea.com/bbs/content.php?co_id=company">회사소개</a></li>
+            <li><a href="https://0korea.com/bbs/content.php?co_id=provision">서비스이용약관</a></li>
+            <li><a href="https://0korea.com/bbs/content.php?co_id=privacy">개인정보처리방침</a></li>
+            <li><a href="https://0korea.com/shop/index.php?device=mobile">모바일버전</a></li>
+            <li class="ft_call">고객센터 1877-3819</li>
+		</ul>
+	</div>
+
+    <div class="ft_info">
+        <span><b>회사명</b> 등록센터(0KOREA)</span>
+        <span><b>주소</b> 충북 괴산군 장연면 미선로오가7길 184</span><br>
+        <span><b>사업자 등록번호</b> 511-32-00175</span>
+        <span><b>대표</b> 최민</span>
+        <span><b>전화</b> 1877-3819</span>
+        <span><b>팩스</b> </span><br>
+        <!-- <span><b>운영자</b> 써클코리아</span><br> -->
+        <span><b>통신판매업신고번호</b> 제2018-충북괴산-0005호</span>
+        <span><b>개인정보 보호책임자</b> 최민</span>
+
+                <br><br>
+        <p>Copyright &copy; 2001-2013 등록센터(0KOREA). All Rights Reserved.</p>
+    	<ul class="ft_sns">
+    		<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+    		<li><a href=""><i class="fab fa-twitter"></i></a></li>
+    		<li><a href=""><i class="fab fa-instagram"></i></a></li>
+    	</ul>
+    </div>
+</div>
+
+
+<script src="https://0korea.com/js/sns.js"></script>
+<!-- } 하단 끝 -->
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+</body>
+</html>
